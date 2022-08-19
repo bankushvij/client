@@ -4,7 +4,7 @@ export const getFood = (foodId) => async (dispatch) => {
     try {
         const Food = await axios({
             method: "GET",
-            url: `http://localhost:4000/food/${foodId}`,
+            url: `https://zomato-server-heroku-backend.herokuapp.com/api/food/${foodId}`,
         });
         return dispatch({ type: GET_FOOD, payload: Food.data });
     } catch (error) {
@@ -16,7 +16,7 @@ export const getFoodList = (menuId) => async (dispatch) => {
         const menu = await axios(
             {
                 method: "GET",
-                url: `http://localhost:4000/menu/list/${menuId}`,
+                url: `https://zomato-server-heroku-backend.herokuapp.com/api/menu/list/${menuId}`,
             }
         )
         return dispatch({ type: GET_FOOD_LIST, payload: menu.data })

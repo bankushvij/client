@@ -8,7 +8,7 @@ export const signIn = (userData) => async (dispatch) => {
         const user = await axios(
             {
                 method: "POST",
-                url: `http://localhost:4000/auth/signin`,
+                url: `https://zomato-server-heroku-backend.herokuapp.com/api/auth/signin`,
                 data: { credentials: userData },
             }
 
@@ -33,7 +33,7 @@ export const signUp = (userData) => async (dispatch) => {
         const user = await axios(
             {
                 method: "POST",
-                url: `http://localhost:4000/auth/signup`,
+                url: `https://zomato-server-heroku-backend.herokuapp.com/api/auth/signup`,
                 data: { credentials: userData },
             }
 

@@ -6,7 +6,7 @@ export const getReviews = (resId) => async (dispatch) => {
        
       const reviewList = await axios({
         method: "GET",
-        url:`http://localhost:4000/review/62c6d9b29f350fe1abc3c5d2`,
+        url:`https://zomato-server-heroku-backend.herokuapp.com/api/review/62c6d9b29f350fe1abc3c5d2`,
       });
   
       return dispatch({ type: GET_REVIEW, payload: reviewList.data });

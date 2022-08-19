@@ -8,7 +8,7 @@ export const getimage=(_id)=>async (dispatch)=>
             const ImageList=await axios(
                 {
                     method:"GET",
-                    url:`http://localhost:4000/image/${_id}`,
+                    url:`https://zomato-server-heroku-backend.herokuapp.com/api/image/${_id}`,
                 }
             )
             return dispatch({type:GET_IMAGES,payload:ImageList.data});

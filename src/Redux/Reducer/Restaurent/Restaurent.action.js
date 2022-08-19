@@ -8,7 +8,7 @@ export const getRestaurent=()=>async(dispatch)=>
         const restaurentList=await axios(
             {
                 method:"GET",
-                url:"http://localhost:4000/restaurent/?city=NCR"
+                url:"https://zomato-server-heroku-backend.herokuapp.com/api/restaurent/?city=NCR"
             }
         )
         return dispatch({ type: GET_RESTAURANT, payload: restaurentList.data });
