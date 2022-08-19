@@ -23,7 +23,7 @@ export const getSpecificRestaurant = (_id) => async (dispatch) => {
     try {
       const restaurnat = await axios({
         method: "GET",
-        url: `http://localhost:4000/restaurent/${_id}`,
+        url: `https://zomato-server-heroku-backend.herokuapp.com/api/restaurent/${_id}`,
       });
   
       return dispatch({
