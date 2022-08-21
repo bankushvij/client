@@ -4,6 +4,8 @@ import { BsShieldLockFill } from "react-icons/bs";
 import FoodItem from "../components/Cart/FoodItem";
 import AddressList from '../components/Checkout/AddressList';
 
+
+
 import { useSelector } from 'react-redux';
 
 
@@ -14,7 +16,7 @@ function CheckoutPage() {
   const payNow=()=>
   {
     let options={
-      key:"rzp_test_2Nows3iCiTzFOA",
+      key:"rzp_test_ylrxtcnQZcSWvV",
       amount:reduxStateCart.reduce((total,current)=>total+current.totalPrice,0)*100,
       currency:"INR",
       name:"Zomato user",
