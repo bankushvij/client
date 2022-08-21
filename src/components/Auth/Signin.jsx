@@ -33,7 +33,7 @@ function Signin({ isOpen, setIsOpen }) {
   
 
   const googleSignIn = () =>
-    (window.location.href = "http://localhost:4000/auth/google");
+    (window.location.href = "https://zomato-server-heroku-backend.herokuapp.com/api/auth/google");
 
   return (
     <>

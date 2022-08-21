@@ -35,7 +35,7 @@ function SignUp({ isOpen, setIsOpen }) {
   };
 
   const googleSignUp = () =>
-    (window.location.href = "http://localhost:4000/auth/google");
+    (window.location.href = "https://zomato-server-heroku-backend.herokuapp.com/api/auth/google");
 
   return (
     <>
